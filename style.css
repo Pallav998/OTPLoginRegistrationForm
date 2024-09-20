@@ -1,0 +1,194 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(75, 108, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: sans-serif;
+    font-style: normal;
+    padding-block: 20px;
+}
+.formBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px; 
+    width: 100%;
+    max-width: 360px;
+    height: 440px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+.line{
+    text-decoration: underline 6px rgb(59, 59, 242);
+}
+.input_icon{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    display:flex;
+    align-items:baseline;
+    gap: 5px;
+    
+}
+.input_icon input{
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.btnBox{
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(76, 76, 252);
+    color: white;
+    border: none;
+}
+.lBtn{
+    color: rgb(38, 67, 255);
+}
+.otpBox{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    width: 320px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px; 
+    display: none;
+}
+.otpLogo i{
+    color: blue;
+    font-size: 3rem;
+    
+}
+.otpNumBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.codeBox{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(109, 109, 109);
+    font-size: 1.5rem;
+    padding: 8px;
+    text-align: center;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px; 
+    width: 100%;
+    max-width: 300px;
+    height: 440px;
+    max-height: 320px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color:white;
+}
+.login{
+    display: none;
+}
+
+.login h2 {
+    padding:auto;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.lastPara {
+    margin-top: 10px;
+}
+
+.lastPara .lBtn {
+    cursor: pointer;
+}
+
+.input_icon {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.input_icon input {
+    border: none;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 0;
+    }
+
+    .formBox, .otpBox, .login {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .formBox h2, .login h2 {
+        font-size: 1.1rem;
+    }
+
+    .input_icon {
+        gap: 5px;
+    }
+
+    .btnBox {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .codeBox {
+        width: 30px;
+        height: 30px;
+    }
+}

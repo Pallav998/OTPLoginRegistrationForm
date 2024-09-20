@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e472ef0660.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="form-container">
+
+        <form class="registration formBox" id="registrationForm">
+            <h2><span class="line">Re</span>gistration</h2>
+
+            <div class="input_icon">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="input_icon">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input_icon">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Create password">
+            </div>
+
+            <div class="input_icon">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirm password">
+            </div>
+            <div class="input_checkbox">
+                <input type="checkbox" />
+                <span>I accept all terms & conditions.</span>
+            </div>
+            <button type="button" class="registerBtn btnBox" onclick="showOtpBox()">Register Now</button>
+            <p>Already have an account? <span class="lBtn" onclick="showLoginForm()">Login now</span></p>
+        </form>
+
+        <div class="otpBox" id="otpBox">
+            <div class="otpLogo">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>Enter OTP Code</h3>
+            <div class="otpNumBox">
+                <input type="text" maxlength="1" class="codeBox">
+                <input type="text" maxlength="1" class="codeBox">
+                <input type="text" maxlength="1" class="codeBox">
+                <input type="text" maxlength="1" class="codeBox">
+            </div>
+            <button class="btnBox" id="otptologin" onclick="showLoginForm()">Verify OTP</button>
+        </div>
+
+        <div class="login" id="loginForm">
+            
+            <form>
+                <h2><span class="line">Lo</span>gin</h2>
+                <div class="input_icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" />
+                </div>
+
+                <div class="input_icon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="item"type="password" placeholder="Enter your password"/>
+                </div>
+
+                <div class="forgot-password">
+                    <div class="checkbox">
+                        <input type="checkbox" />
+                        <span>Remember me</span>
+                    </div>
+                    <span class="lBtn">Forgot password?</span>
+                </div>
+                
+                <button type="button" class="btnBox" id="btnBox" onclick="showRegistrationForm()">Login Now</button>
+                <p class="lastPara">
+                    Don't have an account?
+                    <span class="lBtn" onclick="showRegistrationForm()">Signup now</span>
+                </p>
+            </form>
+        </div>
+
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
